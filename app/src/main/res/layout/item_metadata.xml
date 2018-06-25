@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_metadata"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentEnd="true"
+    android:gravity="end"
+    android:orientation="horizontal"
+    android:paddingTop="15dp"
+    android:paddingEnd="5dp"
+    android:paddingStart="5dp"
+    android:paddingBottom="5dp"
+    tools:showIn="@layout/item_post">
+
+    <TextView
+        android:id="@+id/tv_author"
+        android:textSize="12sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/author"
+        android:drawablePadding="2dp"
+        tools:text="Lungo"/>
+
+    <TextView
+        android:id="@+id/tv_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:drawableStart="@drawable/clock"
+        android:drawablePadding="2dp"
+        tools:text="16 hours ago"/>
+
+    <TextView
+        android:id="@+id/tv_comments"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:drawableStart="@drawable/comments"
+        android:drawablePadding="2dp"
+        tools:text="247"/>
+
+</LinearLayout>

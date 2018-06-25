@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/iv_thumb"
+                android:layout_width="match_parent"
+                android:scaleType="centerCrop"
+                android:adjustViewBounds="true"
+                android:layout_height="150dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:contentDescription="@string/thumbnail"/>
+
+            <TextView
+                android:id="@+id/tv_title"
+                style="@style/PostTextStyle"
+                android:layout_marginTop="5dp"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                tools:text="Right now, 5 million people are in a rally for the main opposition candidate against Erdogan"/>
+        </LinearLayout>
+
+        <include layout="@layout/item_metadata"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_below="@id/ll_content"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
