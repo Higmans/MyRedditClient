@@ -1,0 +1,12 @@
+{
+  "odata.metadata": "https://cmmsp2016.imagoverum.com/_api/$metadata#SP.ContextWebInformation",
+  "FormDigestTimeoutSeconds": 1800,
+  "FormDigestValue": "0x504FE88F7F196CA98A6BFE9B548A4580FBCF9BB3BF2E4D4976C13FC67960E38170C0E1BEAC71F6CEF51B21C00C3CCCC0016F8DB343F551B3C9BF074AB0BA933F,25 Apr 2018 10:07:45 -0000",
+  "LibraryVersion": "16.0.4327.1000",
+  "SiteFullUrl": "https://cmmsp2016.imagoverum.com",
+  "SupportedSchemaVersions": [
+    "14.0.0.0",
+    "15.0.0.0"
+  ],
+  "WebFullUrl": "https://cmmsp2016.imagoverum.com"
+}

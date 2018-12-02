@@ -2,7 +2,7 @@ package biz.lungo.myredditclient
 
 import android.support.test.rule.ActivityTestRule
 import biz.lungo.myredditclient.screen.TopPostsScreen
-import biz.lungo.myredditclient.view.MainActivity
+import biz.lungo.myredditclient.screens.common.main.MainActivity
 import org.junit.Rule
 import org.junit.Test
 
@@ -23,38 +23,6 @@ class MainScreenTest {
                     title { hasAnyText() }
                 }
             }
-        }
-    }
-
-    @Test
-    fun testPagination() {
-        screen {
-            idle(1000)
-            btnNext {
-                isVisible()
-                click()
-            }
-            idle(1000)
-            topPostsList {
-                firstChild<TopPostsScreen.Item> {
-                    isVisible()
-                    title { hasAnyText() }
-                }
-            }
-            btnNext {
-                click()
-            }
-            idle(1000)
-            topPostsList {
-                firstChild<TopPostsScreen.Item> {
-                    isVisible()
-                    title { hasAnyText() }
-                }
-            }
-            btnPrev {
-                click()
-            }
-            idle(1000)
         }
     }
 }
